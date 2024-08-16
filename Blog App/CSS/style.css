@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    counter-reset: section;
+}
+
+.top_heading{
+    font-size: 3em;
+    /* margin-top: 2em; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+
+/* Img */
+
+.img_container{
+    width: 100%;
+    background-color: black;
+}
+
+.img_container img{
+width: 100%;
+}
+/* login */
+
+.login{
+    
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+
+.login h2{
+    text-align: end;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    
+}
+
+.login input{
+    display: block;
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid black;
+    outline: none;
+    width: 100%;
+}
+
+.login button{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    text-align: center;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.login button:hover{
+    background: transparent;
+    color: black;
+}
+
+.post_btn{
+    cursor: pointer;
+}
+
+
+/* header */
+
+header{
+background-color: black;
+color: white;
+width: 100%;
+padding: 10px 0;
+text-align: center;
+position: fixed;
+top: 0;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 10px;
+ }
+
+ header ul li a{
+    color: white;
+ }
+
+.notifi{
+    width: 80%;
+    display: block;
+    background-color: green;
+    color: white;
+    text-align: center;
+    margin: 30px auto;
+    /* padding: 5px; */
+}
+
+/* post */
+
+.main_content{
+ display: grid;
+ grid-template-columns: 30% 70%;
+
+}
+
+
+.main_content .post_form{
+    width: 300px;
+    margin: 100px auto; 
+    box-shadow: rgba(red, green, blue, 0.16) 0px 1px 4px; 
+    padding: 30px;
+}
+
+.main_content .post_form input , textarea{
+    width: 100%;
+    border: 1px solid #111;
+    padding: 5px 0;
+    margin: 20px 0px;
+}
+
+.main_content .post_form button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 5px 0;
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+}
+
+.main_content .post_form button:hover{
+    background: transparent;
+    color: black;
+}
+
+/* update_btn */
+
+.my_blog{
+    display: none;
+}
+
+.update_btn{
+display: none;
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+.my_content{
+    width: 100%;
+    padding: 70px 50px;
+}
+
+.my_content table{
+    width: 100%;
+    margin: 50px auto;
+    box-shadow: rgba(0, 0, 0, 0.16)0px 1px 4px;
+    padding: 30px;
+}
+
+.my_content table tr{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.my_content table tr button{
+    padding: 5px 10px;
+    border: 1px solid black;
+    /* transition: 1.5s ease-in; */
+    color: white;
+    cursor: pointer;
+}
+
+.my_content table tr  button.delete{
+background-color: rgb(106, 8, 8);
+border: rgb(106, 8, 8);
+}
+
+.my_content table tr button.update{
+    background-color: rgb(8, 67, 106);
+    border: rgb(8, 67, 106);
+    }
+
+
+    .my_content table tr button:hover{
+      background: transparent;
+      color: #111;    
+    border: 1px solid black;
+      
+    }
+
+
+
+/* id */
+
+.postNumber{
+ height: 20px;
+ display: inline-block;
+ width: 20px;
+}
+
+.postNumber::before{
+    counter-increment: section;
+    content: counter(section);
+}
+
+
+/*  */
+.main{
+    width: 70%;
+    margin: 0 auto;
+    padding: 60px 0;
+   
+}
+
+.post{
+    margin: 20px 0;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 2px 2px 5px; */
+    border: 2px solid rgba(0, 0, 0, 0.16);
+    padding: 20px;
+
+    
+
+}
+
+
+.post h2{
+    padding: 10px 0;
+}
+
+
+
+footer{
+    height: 70px;
+    line-height: 70px;
+    color: white;
+    background: #111;
+    text-align: center;
+    font-size: 1.2em;
+    word-spacing: 5px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

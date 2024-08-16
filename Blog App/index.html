@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog App</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+
+<div class="login">
+    <h2>Log In</h2>
+    <input type="email" id="email" placeholder="Enter Your Email ?" autocomplete="off">
+    <input type="password" id="password" placeholder="Enter Your Password ?" autocomplete="off">
+    <button id="sign_in">Login</button>
+    <h3>THIS APP IS ALLOWED ONLY ADMIN EMAIL AND PASSWORD</h3>
+    <h4>Email: admin@gmail.com</h4>
+    <h4>Password: admin12345</h4>
+
+
+</div>
+
+<!--  My Blog area admin -->
+
+<div class="my_blog">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+<div class="img_container">
+    <img src="https://codecanyon.img.customer.envatousercontent.com/files/439586450/koowoo+ionic+inline+preview.png?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=300&s=7e92fa69156a1ece2779bdb62311c475" alt="">
+</div>
+
+    <div class="notifi"></div>
+    <div class="container main">
+        <div class="main_content">
+            <!-- post form -->
+            <div class="post_form">
+                <label>Title</label>
+                <input type="text" name="" id="title" placeholder="Enter Title ?">
+                <label>Your Post</label>
+                <textarea name="" id="post_content" cols="30" rows="10"></textarea>
+                <button id="post_btn" class="post_btn">Post Now</button>
+                <button id="update_btn" class="update_btn">Update Post</button>
+            </div>
+            <!-- table -->
+             <div class="my_content">
+                <h2 class="top_heading">My Posts!</h2>
+             <table>
+                
+             </table>
+             </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <footer>
+        <div class="footer_text">
+            <p>Copy Right Text Reserve Ammar Ahmed</p>
+        </div>
+    </footer>
+</div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
